@@ -27,9 +27,8 @@
 .contact a {
   display: inline-flex;
   align-items: center;
-  min-height: 2.75rem;
+  min-height: 2rem;
   color: var(--clay);
-  text-decoration: underline;
 }
 
 .copyright {
