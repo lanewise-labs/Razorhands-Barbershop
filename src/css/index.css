@@ -1,0 +1,30 @@
+:root {
+  --bg: #2A1A1F;
+  --copper: #AD8350;
+  --cream: #F5EFD6;
+  --clay: #764134;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--bg);
+  color: var(--cream);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Port Lligat Slab', serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h3,
+h4,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
