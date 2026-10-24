@@ -1,0 +1,81 @@
+:root {
+  --error: #F0A090;
+}
+
+.booking {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--copper);
+}
+
+.booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.booking label {
+  font-family: 'IM Fell French Canon SC', serif;
+  font-size: 1.1rem;
+  color: var(--copper);
+}
+
+.booking input {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--copper);
+  border-radius: 0.75rem;
+  background-color: var(--cream);
+  color: var(--bg);
+  font-family: 'Port Lligat Slab', serif;
+  font-size: 1rem;
+}
+
+.booking input::placeholder {
+  color: var(--clay);
+  opacity: 0.8;
+}
+
+.booking input:focus-visible {
+  outline: 2px solid var(--copper);
+  outline-offset: 2px;
+}
+
+.booking input,
+.booking select {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--copper);
+  border-radius: 0.75rem;
+  background-color: var(--cream);
+  color: var(--bg);
+  font-family: 'Port Lligat Slab', serif;
+  font-size: 1rem;
+}
+
+.booking select[aria-invalid='true'] {
+  border-color: var(--error);
+  border-width: 2px;
+}
+
+.field-error {
+  font-size: 0.875rem;
+  color: var(--error);
+}
+
+
+.form-note {
+  font-size: 0.875rem;
+  text-align: center;
+  opacity: 0.85;
+}

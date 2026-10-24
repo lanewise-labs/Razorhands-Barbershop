@@ -15,7 +15,10 @@
   font-size: 4rem;
   color: var(--copper);
   margin: 0;
+  line-height: 1;
+  text-align: center;
 }
+
 .btn {
   display: inline-flex;
   align-items: center;
