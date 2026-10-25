@@ -116,6 +116,26 @@
   color: var(--bg);
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
   transform: translateY(100%);
+  overscroll-behavior: contain;
+}
+
+.sheet-grab {
+ touch-action: none;
+ cursor: grab;
+}
+.modal-content.dragging {
+ animation: none;
+ transform: translateY(0);
+}
+.modal-content.settled {
+ animation: none;
+ transform: translateY(0);
+ transition: transform 200ms ease-out;
+}
+.modal-content.dismiss {
+ animation: none;
+ transform: translateY(100%);
+ transition: transform 300ms ease-in;
 }
 
 .modal-content.slide-up {

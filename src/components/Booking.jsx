@@ -50,9 +50,9 @@ function Booking(){
         setDragY(0)
         setModalAnimation(animation)
         closeTimer.current = setTimeout(() => {
-        setIsModalOpen(false)
-        setModalAnimation('slide-up')
-        closeTimer.current = null
+            setIsModalOpen(false)
+            setModalAnimation('slide-up')
+            closeTimer.current = null
         }, delay)
     }
     function closeSheet() {
@@ -62,7 +62,7 @@ function Booking(){
     function confirmService() {
         setServiceValues(selected)
         if (selected.length > 0) {
-        setErrors((prev) => ({ ...prev, service: '' }))
+            setErrors((prev) => ({ ...prev, service: '' }))
         }
         closeSheet()
     }
@@ -167,7 +167,7 @@ function Booking(){
                 <div className='modal-overlay' onClick={closeSheet}>
                     <div
                     className={`modal-content ${modalAnimation}`}
-                    style={dragY > 0 ? { transform: `translateY(${dragY}px)` } : undefined}
+                    style={dragY > 0 ? { transform: `translateY(${dragY})` } : undefined}
                     role='dialog'
                     aria-modal='true'
                     aria-labelledby='service-sheet-title'
