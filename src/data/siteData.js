@@ -4,17 +4,17 @@ export const promo = {
 }
 
 export const services = [
-    {title: 'Hair Services', items: [{name: 'Classic Haircut', price: 200}, 
+    {title: 'Hair Services', tab: 'Hair', items: [{name: 'Classic Haircut', price: 200}, 
         {name: 'Kids Haircut', price: 150},
         {name: 'Beard Trim', price: 100},
         {name: 'Hot Towel Shave', price: 150},
         {name: 'Haircut + Shave', price: 300}]},
-    {title: 'Hair Styling', items: [{name: 'Hair Color', price: 800}, 
+    {title: 'Hair Styling', tab: 'Styling', items: [{name: 'Hair Color', price: 800}, 
         {name: 'Perm', price: 1500},
         {name: 'Highlights', price: 1200},
         {name: 'Blowout Styling', price: 250}],
     },
-    {title: 'Spa Services', items: [{name: 'Hair Spa Treatment', price: 600}, 
+    {title: 'Spa Services', tab: 'Spa', items: [{name: 'Hair Spa Treatment', price: 600}, 
         {name: 'Scalp Massage (20 min)', price: 350},
         {name: 'Facial Cleansing', price: 500}]}
     ]
