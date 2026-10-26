@@ -1,11 +1,12 @@
 import './css/App.css'
+import './css/desktop.css'
 import NavBar from './components/NavBar'
 import DemoBanner from './components/DemoBanner'
-import Home from './components/Home'
-import About from './components/About'
-import Services from './components/Services'
-import Booking from './components/Booking'
-import Contact from './components/Contact'
+import Home from './pages/Home'
+import About from './pages/About'
+import Services from './pages/Services'
+import Booking from './pages/Booking'
+import Contact from './pages/Contact'
 
 
 function App() {

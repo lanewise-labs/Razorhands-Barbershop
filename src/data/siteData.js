@@ -34,3 +34,13 @@ export const booking_data = [
     { id: 'datetime', label: 'Date & Time', type: 'datetime-local', placeholder: '' },
     { id: 'service', label: 'Service', type: 'select', placeholder: 'Choose a service' }
 ]
+
+export const shop_hours = {
+    0: { open: 10, close: 15 },
+    1: { open: 9, close: 18 },
+    2: { open: 9, close: 18 },
+    3: { open: 9, close: 18 },
+    4: { open: 9, close: 18 },
+    5: { open: 9, close: 18 },
+    6: { open: 9, close: 14 },
+}

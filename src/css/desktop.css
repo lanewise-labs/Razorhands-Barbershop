@@ -1,0 +1,217 @@
+.reach {
+  display: contents;
+}
+
+.reach-title {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body .container {
+    max-width: 110rem;
+    padding-inline: 2rem;
+  }
+
+  body .section-title {
+    font-size: 6rem;
+  }
+
+  body .nav-bar {
+    flex-wrap: nowrap;
+    padding: 1.25rem max(2rem, calc((100% - 65rem) / 2));
+  }
+
+  body .nav-bar h3 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+
+  body .nav-bar a {
+    padding: 0.25rem 0;
+  }
+
+  body .link-bar {
+    gap: 2.5rem;
+    font-size: 1.125rem;
+  }
+
+  body .home {
+    gap: 0.75rem;
+    padding: 3rem 0 4rem;
+  }
+
+  body .home h1 {
+    font-size: clamp(6rem, 11vw, 8rem);
+  }
+
+  body .subtitle {
+    font-size: 2.25rem;
+    letter-spacing: 0.2em;
+  }
+
+  body .tagline {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+  }
+
+  body .home .btn {
+    min-width: 12rem;
+    min-height: 3.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  body .promo {
+    min-width: 38rem;
+    margin-top: 1.5rem;
+    padding: 1rem 3.5rem 1.25rem;
+  }
+
+  body .promo-title {
+    font-size: 3rem;
+  }
+
+  body .promo-desc {
+    font-family: 'IM Fell French Canon SC', serif;
+    font-size: 1.5rem;
+  }
+
+  body .about,
+  body .services,
+  body .booking {
+    padding: 3.5rem 0;
+  }
+
+  body .about {
+    gap: 1.5rem;
+  }
+
+  body .about p {
+    max-width: 46rem;
+    line-height: 1.9;
+    font-size: x-large;
+  }
+
+  body .services {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  body .services > .section-title {
+    grid-column: 1 / -1;
+  }
+
+  body .card {
+    padding: 1.25rem 1.75rem;
+  }
+
+  body .card-title {
+    font-size: 3.5rem;
+  }
+
+  body .service {
+    padding: 0.9rem 0;
+    border-bottom: 1px dashed rgba(42, 26, 31, 0.35);
+  }
+
+  body .service p {
+    font-size: 2rem;
+  }
+
+  body .booking {
+    gap: 1.5rem;
+  }
+
+  body .booking form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.75rem 1.5rem;
+    width: 100%;
+    max-width: 47.5rem;
+    margin-inline: auto;
+  }
+
+  body .booking label {
+    font-size: 1.25rem;
+  }
+
+  body .booking input,
+  body .picker-trigger {
+    min-height: 3.25rem;
+  }
+
+  body .booking .field:last-of-type {
+    grid-column: 1 / -1;
+  }
+
+  body .booking .btn {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: auto;
+    min-width: 17rem;
+    min-height: 3.5rem;
+    font-size: 1.25rem;
+  }
+
+  body .contact {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+    gap: 0.75rem 2.5rem;
+    padding: 2.5rem max(2rem, calc((100% - 65rem) / 2)) 2rem;
+  }
+
+  body .label {
+    font-size: 1.5rem;
+  }
+
+  body .reach {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body .reach-title {
+    display: block;
+  }
+
+  body .reach .info {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.35rem;
+  }
+
+  body .reach .info .label {
+    display: none;
+  }
+
+  body .reach .info::before {
+    color: var(--bg);
+    line-height: 1.5;
+  }
+
+  body .reach .info:nth-of-type(1)::before {
+    content: 'Call:';
+  }
+
+  body .reach .info:nth-of-type(2)::before {
+    content: 'Email:';
+  }
+
+  body .reach .info:nth-of-type(3)::before {
+    content: 'Social:';
+  }
+
+  body .copyright {
+    grid-column: 1 / -1;
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  body .services {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
